@@ -1,4 +1,4 @@
-#code to visualize extended data figure 5
+#code to visualize extended data figure 2
 
 library(ggplot2)
 library(dplyr)
@@ -84,6 +84,5 @@ p4 <- ggplot(df, aes(total_mass, food_dark, color = genotype, shape = genotype))
 panel_b <- p1 | p2
 panel_c <- p3 | p4
 
-ggsave("path_to_output/extended_fig5b_R_graph.pdf", plot = panel_b, height = 3, units = "in")
-ggsave("path_to_output/extended_fig5c_R_graph.pdf", plot = panel_c, height = 3, units = "in")
-
+ggsave("path_to_output/extended_fig2b_R_graph.pdf", plot = panel_b, height = 3, units = "in")
+ggsave("path_to_output/extended_fig2c_R_graph.pdf", plot = panel_c, height = 3, units = "in")
